@@ -85,6 +85,8 @@ body{
   clip-path: polygon(0 0,100% 0,100% 95%,50% 100%,0 95%);
   color:var(--mainWhite);
   overflow: hidden;
+  padding: 0;
+  padding-top: 10%;
 }
 .height-max{
   min-height: calc(100vh - 76px);
