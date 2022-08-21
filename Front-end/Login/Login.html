@@ -55,14 +55,14 @@
             <div class="contenedor__todo">
                 <div class="caja__trasera">
                     <div class="caja__trasera-login">
-                        <h3>¿Ya tienes una cuenta?</h3>
-                        <p>Inicia sesión para entrar en la página</p>
-                        <button id="btn__iniciar-sesion">Iniciar Sesión</button>
+                        <h3>Do you already have an account?</h3>
+                        <p>Log in to enter the page</p>
+                        <button id="btn__iniciar-sesion">Log In</button>
                     </div>
                     <div class="caja__trasera-register">
-                        <h3>¿Aún no tienes una cuenta?</h3>
-                        <p>Regístrate para que puedas iniciar sesión</p>
-                        <button id="btn__registrarse">Regístrarse</button>
+                        <h3>Do not you have an account yet?</h3>
+                        <p>Register to be able to login</p>
+                        <button id="btn__registrarse">Sign In</button>
                     </div>
                 </div>
 
@@ -70,23 +70,57 @@
                 <div class="contenedor__login-register">
                     <!--Login-->
                     <form action="" class="formulario__login">
-                        <h2>Iniciar Sesión</h2>
-                        <input class="form-control" type= "text" placeholder="Correo Electronico">
-                        <input class="form-control" type="password" placeholder="Contraseña">
-                        <button>Entrar</button>
+                        <h2>Log in</h2>
+                        <input class="form-control" type= "text" placeholder="E-Mail">
+                        <input class="form-control" type="password" placeholder="Password">
+                        <button type="submit" class="btn btn-primary">Log in</button>
                     </form>
 
                     <!--Register-->
                     <form action="" class="formulario__register">
-                        <h2>Regístrarse</h2>
-                        <input class="form-control" type="text" placeholder="Nombre completo">
-                        <input class="form-control"type="text" placeholder="Correo Electronico">
-                        <input class="form-control"type="text" placeholder="Usuario">
+                        <h2>Sign in</h2>
+                        <div class="form-control" id="input-container">
+                        <label for="name" class="form-label">Name:</label>
+                        <input class="form-control" type="text" placeholder="Full Name">
+                        </div>
+                        <div class="form-control" id="input-container">
+                        <label for="email" class="form-label">E-mail:</label>
+                        <input class="form-control"type="text" placeholder="E-Mail">
+                        </div>
+                        <div class="form-control" id="input-container">
+                        <label for="user" class="form-label">User:</label>
+                        <input class="form-control"type="text" placeholder="User">
+                        </div>
+                        <div class="form-control" id="input-container">
+                        <label for="carPhoto" class="form-label">Car photo:</label>
                         <input class="fiel-upload-input form-control" type="file" onchange="readURL(this)" accept="Image/*">
-                        <input class="form-control-color" type="color" name="" id="">
-                        <input class="form-control-color" type="color" name="" id="">
-                        <input class="form-control"type="password" placeholder="Contraseña">
-                        <button>Regístrarse</button>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="input-group">
+                            <div class="form-control" id="input-container">
+                            <label for="mainColor" class="form-label">Background main color:</label>
+                            <div>
+                              <input type="checkbox" class="checkbox" id="chk" />
+                              <label class="label" for="chk">
+                                <i class="fas fa-moon"></i>
+                                <i class="fas fa-sun"></i>
+                                <div class="ball"></div>
+                              </label>
+                            </div>
+                            </div>
+                            <div class="form-control" id="input-container">
+                            <label for="carColor" class="form-label">Car color:</label>
+                            <input class="form-control-color" type="color" name="" id="">
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="form-control" id="input-container">
+                        <label for="password" class="form-label">Password:</label>
+                        <input class="form-control"type="password" placeholder="Password">
+                        </div>
+                        <button type="submit" class="btn btn-primary">SIGN IN</button>
                     </form>
                 </div>
             </div>

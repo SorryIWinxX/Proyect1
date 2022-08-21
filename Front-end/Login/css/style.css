@@ -7,6 +7,17 @@
     list-style: none;
 }
 
+.form-control{
+    border: none;
+    background-color: transparent;
+    border-top: thin solid rgba(0, 0, 0, 0.4);
+    border-radius: 0px;
+}
+
+label{
+    color:#fff;
+}
+
 .nounderline {
   text-decoration: none !important
 }

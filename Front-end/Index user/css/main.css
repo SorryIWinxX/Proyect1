@@ -136,8 +136,8 @@ body{
 .title-icon:hover{
   color: var(--mainBlue);
   opacity: 0.6;
-}
-/* skills */
+} 
+/* Especiality */
 .skills-icon{
   font-size: 3rem;
   color: var(--mainWhite);
